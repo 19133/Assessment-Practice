@@ -19,7 +19,7 @@
 
   # Loop to ask for snacks
 
-  # Calculate snakc price
+  # Calculate snack price
 
 
   # Ask for a payment metohd (and apply surcharge if necessary)
