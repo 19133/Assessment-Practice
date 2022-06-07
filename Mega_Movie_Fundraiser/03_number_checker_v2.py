@@ -1,5 +1,3 @@
-# function goes here
-
 
 # Checks for an integer more than 0
 def int_check(question):
@@ -17,3 +15,17 @@ def int_check(question):
         print (error)
       else:
         return response
+
+    # if an integer is not entered, display an error
+    except ValueError:
+        print(error)
+
+    # Get age (between 12 and 130)
+    age = int_check("Age: ")
+
+    if age < 12:
+      print("Sorry you are too young for this movie")
+      continue
+    elif age > 130:
+      print("That is very old - it looks like a mistake")
+      continue
