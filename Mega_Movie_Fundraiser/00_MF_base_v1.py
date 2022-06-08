@@ -115,7 +115,7 @@ while name != "xxx" and ticket_count < MAX_TICKETS:
     elif age > 130:
       print("That is very old - it looks like a mistake")
       continue
-
+      
     if age < 16:
       ticket_price = 7.5
     elif age < 65:

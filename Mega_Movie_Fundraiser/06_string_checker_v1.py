@@ -2,7 +2,7 @@
 
 # String checker functions, takes in
 # question and list of valid responses
-def string_chekcer(question, to_check):
+def string_checker(question, to_check):
 
   valid = False
   while not valid:
