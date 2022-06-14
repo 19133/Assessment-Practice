@@ -22,12 +22,15 @@ def string_check(choice, options):
   if is_valid == "yes":
     return chosen
   else:
+    print ("Please enter a valid option")
+    print()
     return "invalid choice"
 
 
 # Valid snacks holds list of all snacks
 # Each item in valid snacks is a list with
-# valid options for each snacks <full name, letter code (a - e), and possible abbreviations etc>
+# valid options for each snacks <full name, letter code (a - e)
+# , and possible abbreviations?
 valid_snacks = [
   ["popcorn", "p", "corn", "a"],
   ["M&M's", "m&m's", "mms", "m", "b"], # first item is M&M
@@ -37,16 +40,17 @@ valid_snacks = [
 
 # valid question for yes / no questions
 yes_no = [
-  ["yes", "y"]
+  ["yes", "y"],
   ["no", "n"]
 ]
 
 # holds snack order for a single user
 snack_order = []
 
+# ask user if they want a snack
 check_snack = "invalid choice"
 while check_snack == "invalid choice":
-  want_snack = input("Do you want to oreder snacks? ").lower()
+  want_snack = input("Do you want to order snacks? ").lower()
   check_snack = string_check(want_snack, yes_no)
 
 # If they say yes, ask what snacks they want (and add to out snack list)
@@ -59,16 +63,16 @@ if check_snack == "Yes":
 
     if desired_snack == "xxx":
       break
-
-  # check if snack is valid
-  snack_choice = string_check(desired_snack, valid_snacks)
-  print("Snack Choice: ", snack_choice)
-
-  # add snack to list...
-
-  # check that snack is not the exit code before adding
-  if snack_choice != "xxx" and snack_choice != "invalid choice":
-    snack_order.append(snack_choice)
+  
+    # check if snack is valid
+    snack_choice = string_check(desired_snack, valid_snacks)
+    print("Snack Choice: ", snack_choice)
+  
+    # add snack to list...
+  
+    # check that snack is not the exit code before adding
+    if snack_choice != "xxx" and snack_choice != "invalid choplice":
+      snack_order.append(snack_choice)
 
 # show snack orders
 print()
@@ -80,4 +84,3 @@ else:
 
   for item in snack_order:
     print(item)
-  
