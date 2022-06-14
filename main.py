@@ -16,8 +16,8 @@ def string_check(choice, options):
 
     # if the chosen option is not valid, set is_valid to no
     else:
-      is_valid = "no"
-
+      is_valid = "no" 
+ 
   # if the snack is not OK - ask question again 
   if is_valid == "yes":
     return chosen
