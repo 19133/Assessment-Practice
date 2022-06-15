@@ -21,7 +21,7 @@ for item in test_strings:
     desired_snack = item[1:]
 
   else:
-    amoun = 1
+    amount = 1
     desired_snack = item
 
   # remove white space around snack  

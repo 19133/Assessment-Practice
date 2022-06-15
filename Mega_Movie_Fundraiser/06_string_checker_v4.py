@@ -22,8 +22,6 @@ def string_check(choice, options):
   if is_valid == "yes":
     return chosen
   else:
-    print ("Please enter a valid option")
-    print()
     return "invalid choice"
 
 

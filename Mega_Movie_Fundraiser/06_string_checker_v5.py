@@ -24,7 +24,6 @@ def string_check(choice, options):
     return chosen
   else:
     return "invalid choice"
-    
 
 
 # regular expression to find if item starts with a number
@@ -102,7 +101,18 @@ if len(snack_order) == 0:
 else:
   print("Snacks Ordered:")
 
+# show snack orders
+print()
+if len (snack_order) == 0:
+  print("Snacks Ordered: None")
+
+else:
+  print("Snack Ordered:")
+
   for item in snack_order:
     print(item)
+      
 
-  
+
+
+        
