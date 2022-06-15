@@ -21,7 +21,7 @@ for item in test_strings:
     desired_snack = item[1:]
 
   else:
-    amount = 1
+    amoun = 1
     desired_snack = item
 
   # remove white space around snack  
@@ -33,5 +33,4 @@ for item in test_strings:
   print("Amount:", amount)
   print("Snack: ", desired_snack)
   print("Length of snack:", len(desired_snack))
-
   
